@@ -29,9 +29,17 @@
 
 /public/packs
 /public/packs-test
+/public/uploads
 /node_modules
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
 .DS_Store
 .thumbs.db
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

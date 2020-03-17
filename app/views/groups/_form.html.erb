@@ -31,6 +31,13 @@
     <%= form.text_field :name %>
   </div>
 
+  <%= image_tag @group.cover.url, width: 200 if @group.cover.url != nil %>
+
+  <div class="field">
+    <%= form.label :cover %>
+    <%= form.file_field :cover %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

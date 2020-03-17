@@ -10,13 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_31_031859) do
+ActiveRecord::Schema.define(version: 2019_10_31_151140) do
 
   create_table "groups", force: :cascade do |t|
     t.integer "start_year"
     t.integer "end_year"
     t.string "codename"
     t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "cover"
+  end
+
+  create_table "selfies", force: :cascade do |t|
+    t.integer "student_id"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "middle_name"
+    t.string "facebook"
+    t.string "instagram"
+    t.string "vkontecte"
+    t.string "youtube"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

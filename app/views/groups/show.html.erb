@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @group.cover.url if @group.cover.url != nil %>
+
 <p>
   <strong>Start year:</strong>
   <%= @group.start_year %>
